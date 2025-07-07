@@ -1,6 +1,6 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../assets/Gamehub Logo.webp";
-import ColorModeSwitch from "./ColormodeSwitch";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 function Nav() {
   return (
