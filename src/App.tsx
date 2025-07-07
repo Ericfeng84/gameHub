@@ -14,11 +14,13 @@ function App() {
       }}
       templateRows={{
         base: "60px 1fr",
+        lg: "60px 1fr", // 保证大屏下两行
       }}
     >
-      <GridItem pl="2"  area={"nav"}>
+      <GridItem pl="2" area={"nav"}>
         <Nav />
       </GridItem>
+      {/* 只在大屏显示 Aside */}
       <Show above="lg">
         <GridItem pl="2" bg="orange.300" area={"aside"}>
           Aside

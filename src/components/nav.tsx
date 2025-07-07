@@ -1,11 +1,12 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../assets/Gamehub Logo.webp";
+import ColorModeSwitch from "./ColormodeSwitch";
 
 function Nav() {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" paddingRight="10px" paddingLeft="10px">
       <Image src={logo} boxSize="60px" />
-      <Text>Nav</Text>
+      <ColorModeSwitch />
     </HStack>
   );
 }
